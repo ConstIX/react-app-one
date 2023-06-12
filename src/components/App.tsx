@@ -3,7 +3,7 @@ import '../scss/style.scss'
 
 function App() {
    return (
-      <div>
+      <div className="wrapper">
       </div>
    )
 }
