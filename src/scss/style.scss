@@ -9,6 +9,12 @@
    flex-direction: column;
 }
 
+svg path {
+   fill: inherit;
+   stroke: inherit;
+   stroke-width: inherit;
+}
+
 // ОСНОВНАЯ СЕТКА
 .container {
    max-width: $mw;
