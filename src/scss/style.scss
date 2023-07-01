@@ -9,6 +9,40 @@
    flex-direction: column;
 }
 
+.header-block {
+   max-width: 815px;
+   margin: 0 auto;
+   text-align: center;
+
+   &::after {
+      display: block;
+      content: '';
+      width: 100px;
+      height: 5px;
+      background-color: #ed1c29;
+      margin: 0 auto;
+   }
+
+   &__title {
+      &_dc {
+         font-size: 30px;
+         font-weight: 300;
+         color: #fff;
+         margin: 0 0 25px 0;
+      }
+   }
+
+   &__text {
+      &_dc {
+         font-size: 14px;
+         font-weight: 300;
+         line-height: 20px;
+         color: #fff;
+         margin: 0 0 25px 0;
+      }
+   }
+}
+
 svg path {
    fill: inherit;
    stroke: inherit;

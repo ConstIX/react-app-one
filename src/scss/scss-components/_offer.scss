@@ -1,0 +1,59 @@
+@import "../variables";
+
+.offer {
+   padding: 70px 0;
+   background-color: #ed1c29;
+
+   &__body {
+      max-width: 530px;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   &__title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0 0 50px 0;
+   }
+
+   &__btn {
+      display: inline-block;
+      padding: 10px 45px;
+      border-radius: 3px;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      box-shadow: 3px 9px 5px 0 rgba(0, 0, 0, 0.25);
+      transform: translateY(-5px);
+      transition: all 0.3s ease 0s;
+      background-color: #fff;
+      color: #ed1c29;
+
+      &:hover {
+         transform: translateY(0);
+         box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
+      }
+   }
+
+   @media (max-width: $md3) {
+      &__title {
+         font-size: 22px;
+         line-height: 30px;
+         margin: 0 0 35px 0;
+      }
+   }
+
+   @media (max-width: $md4) {
+      &__title {
+         font-size: 18px;
+      }
+
+      &__btn {
+         font-size: 15px;
+         padding: 10px 30px;
+      }
+   }
+}
