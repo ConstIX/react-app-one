@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2021 (64-Bit) -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="151.264mm" height="21.5639mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="60mm" height="15mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 89.46 12.75"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
@@ -9,8 +9,8 @@ viewBox="0 0 89.46 12.75"
   <style type="text/css">
    <![CDATA[
     .str0 {stroke:#7E71B1;stroke-width:0.12;stroke-miterlimit:22.9256}
-    .fil1 {fill:#7E71B1}
-    .fil0 {fill:#7E71B1;fill-rule:nonzero}
+    .fil1 {fill:#FFFFFF}
+    .fil0 {fill:#FFFFFF;fill-rule:nonzero}
    ]]>
   </style>
  </defs>

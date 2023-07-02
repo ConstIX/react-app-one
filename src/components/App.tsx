@@ -1,9 +1,10 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 
-import '../scss/style.scss'
-
+import Footer from "./Footer"
 import Home from "./pages/Home"
+
+import '../scss/style.scss'
 
 function App() {
    return (
@@ -18,6 +19,9 @@ function App() {
             </Routes>
 
          </main>
+
+         <Footer />
+
       </div>
    )
 }
