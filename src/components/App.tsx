@@ -1,29 +1,24 @@
 import React from "react"
+import { Route, Routes } from "react-router-dom"
+
 import '../scss/style.scss'
-import DecorationCategory from "./DecorationCategory"
-import Features from "./Features"
-import Header from "./Header"
-import Offer from "./Offer"
+
+import Home from "./pages/Home"
 
 function App() {
    return (
-      <>
+      <div className="wrapper">
 
          {/* <Header /> */}
 
-         <div className="wrapper">
-            <main className="page">
+         <main className="page">
 
-               <DecorationCategory />
-               <Offer />
-               <Features />
+            <Routes>
+               <Route path='/' element={<Home />} />
+            </Routes>
 
-            </main>
-         </div>
-
-         {/* <Header /> */}
-
-      </>
+         </main>
+      </div>
    )
 }
 

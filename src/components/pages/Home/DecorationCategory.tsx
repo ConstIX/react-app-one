@@ -1,13 +1,13 @@
 import React from 'react'
 
-import image1 from '../assets/img/categories/01.jpg'
-import image2 from '../assets/img/categories/02.jpg'
-import image3 from '../assets/img/categories/03.jpg'
-import image4 from '../assets/img/categories/04.jpg'
-import image5 from '../assets/img/categories/05.jpg'
-import image6 from '../assets/img/categories/06.jpg'
-import image7 from '../assets/img/categories/07.jpg'
-import image8 from '../assets/img/categories/08.jpg'
+import image1 from '../../../assets/img/categories/01.jpg'
+import image2 from '../../../assets/img/categories/02.jpg'
+import image3 from '../../../assets/img/categories/03.jpg'
+import image4 from '../../../assets/img/categories/04.jpg'
+import image5 from '../../../assets/img/categories/05.jpg'
+import image6 from '../../../assets/img/categories/06.jpg'
+import image7 from '../../../assets/img/categories/07.jpg'
+import image8 from '../../../assets/img/categories/08.jpg'
 
 const DecorationCategory: React.FC = () => {
    return (
@@ -16,7 +16,7 @@ const DecorationCategory: React.FC = () => {
 
             <div className="categories__header-block header-block">
                <div className="header-block__title header-block__title_dc">MV creative - производство декораций</div>
-               <div className="header-block__text header-block__text_dc">Занимаемся застройкой декораций разной направленности. Оформляем спортивные, модные, частные и корпоративные мероприятия.</div>
+               <div className="header-block__text">Занимаемся застройкой декораций разной направленности. Оформляем спортивные, модные, частные и корпоративные мероприятия.</div>
             </div>
 
             <div className="categories__body">
