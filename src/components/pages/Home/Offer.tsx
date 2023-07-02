@@ -5,7 +5,7 @@ const Offer: React.FC = () => {
       <section className="offer">
          <div className="offer__body">
             <div className="offer__title">Хотите получить предложение? <br /> отправьте нам ваше имя и телефон</div>
-            <a href="#message" className="offer__btn">Отправить сообщение</a>
+            <a href="#message" className="btn btn_o offer__btn">Отправить сообщение</a>
          </div>
       </section>
    )

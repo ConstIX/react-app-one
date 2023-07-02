@@ -1,6 +1,7 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 
+import Header from "./Header"
 import Footer from "./Footer"
 import Home from "./pages/Home"
 
@@ -10,7 +11,7 @@ function App() {
    return (
       <div className="wrapper">
 
-         {/* <Header /> */}
+         <Header />
 
          <main className="page">
 

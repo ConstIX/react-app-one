@@ -1,9 +1,10 @@
 @import "../variables";
 
 .header {
-   position: absolute;
+   position: fixed;
    width: 100%;
    background-color: #fff;
+   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.14);
    z-index: 50;
 
    &__body {
@@ -13,9 +14,88 @@
       height: 95px;
    }
 
-   &__logo {
+   &__item {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+   }
+
+   &__logo,
+   &__social {
       position: relative;
       z-index: 4;
+   }
+
+   &__social {
+      display: flex;
+      gap: 5px;
+   }
+
+   &__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ed1c29;
+      transition: all 0.3s ease 0s;
+
+      svg {
+         fill: #fff;
+         transition: all 0.3s ease 0s;
+      }
+
+      &:hover {
+         background-color: #fff;
+
+         svg {
+            fill: #ed1c29
+         }
+      }
+   }
+
+   &__phone {
+      font-size: 18px;
+      font-weight: 300;
+      color: #000;
+   }
+
+   @media (max-width: $md2) {
+      &__body {
+         flex-direction: row-reverse;
+      }
+
+      &__column:last-child {
+         display: none;
+      }
+
+      &__item {
+         flex-direction: row-reverse;
+         gap: 20px;
+      }
+
+      &__phone-block {
+         flex-direction: column;
+         gap: 10px;
+      }
+   }
+
+   @media (max-width: $md4) {
+      &__column:nth-child(2) {
+         flex: 0 1 105px;
+         overflow: hidden;
+      }
+
+      &__link {
+         width: 30px;
+         height: 30px;
+
+         svg {
+            width: 16px;
+            height: 16px;
+         }
+      }
    }
 }
 
@@ -26,26 +106,27 @@
       align-items: center;
 
       li {
-         margin: 0 0 40px 0;
+         margin: 0 0 60px 0;
       }
    }
 
    &__link {
-      font-size: 18px;
-      color: #0B4A72;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #000;
       transition: all 0.3s ease 0s;
 
       span {
          position: relative;
-         display: block;
 
          &:after {
             content: "";
             position: absolute;
             left: 50%;
             width: 0;
-            height: 1px;
-            background-color: #0B4A72;
+            height: 1.5px;
+            background-color: #000;
             bottom: -5px;
             transition: all 0.3s ease 0s;
          }
@@ -61,33 +142,46 @@
 
    &__body {
       position: fixed;
-      width: 100%;
-      height: 100%;
-      top: -110%;
-      left: 0;
+      width: 350px;
+      height: auto;
+      top: 0;
+      left: -110%;
       overflow: auto;
-      padding: 200px 0 0 0;
+      padding: 150px 0 0 0;
       transition: all 0.3s ease 0s;
 
       &.active {
-         background-color: #FEF8F1;
-         top: 0;
+         background-color: #fff;
+         left: 0;
+      }
+   }
+
+   &__phone-block {
+      display: none;
+   }
+
+   @media (max-width: $md2) {
+      &__body {
+         width: 100%;
+         height: 100%;
+         padding: 200px 0 0 0;
+      }
+
+      &__list {
+         li {
+            margin: 0 0 40px 0;
+         }
+      }
+
+      &__phone-block {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 15px;
       }
    }
 }
-
-// body.lock header.header:before {
-//    content: "";
-//    position: fixed;
-//    z-index: 1;
-//    top: 0;
-//    left: 0;
-//    height: 95px;
-//    width: 100%;
-//    background-color: #FEF8F1;
-//    box-shadow: 0 0 10px 0 rgba(66, 66, 66, 0.2);
-// }
-
 
 // Бургер меню
 .icon-menu {
@@ -106,7 +200,7 @@
       width: 100%;
       height: 4px;
       border-radius: 1.5px;
-      background-color: #0B4A72;
+      background-color: #242424;
 
       &:first-child {
          top: 0;
@@ -118,9 +212,23 @@
       }
    }
 
+   &:hover {
+      span {
+         transform: scale(0.8);
+
+         &:first-child {
+            transform: rotate(-5deg);
+         }
+
+         &:last-child {
+            transform: rotate(5deg);
+         }
+      }
+   }
+
    &.active {
       span {
-         background-color: #0B4A72;
+         background-color: #242424;
          transform: scale(0);
 
          &:first-child {
