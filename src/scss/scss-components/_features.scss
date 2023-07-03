@@ -82,6 +82,9 @@
    }
 
    @media (max-width: $md4) {
+      &__body {
+         margin: 20px 0 0 0;
+      }
 
       &__item {
          padding: 70px 10px 30px 10px;
