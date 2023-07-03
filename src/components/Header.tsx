@@ -13,6 +13,8 @@ const Header: React.FC = () => {
 
    const [menu, setMenu] = React.useState<boolean>(false)
 
+   menu && document.documentElement.clientWidth < 992.98 ? document.body.classList.add('lock') : document.body.classList.remove('lock')
+
    return (
       <header className="header">
          <div className="container">
