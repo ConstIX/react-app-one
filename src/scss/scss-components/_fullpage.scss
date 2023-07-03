@@ -1,0 +1,67 @@
+@import "../variables";
+
+.fullpage {
+   position: relative;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 50px 0 0 0;
+
+   &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+   }
+
+   &__body {
+      position: absolute;
+      text-align: center;
+      padding: 0 10px 0 10px;
+      z-index: 4;
+   }
+
+   &__title {
+      max-width: 700px;
+      margin: 40px 0;
+      font-size: 18px;
+      line-height: 24px;
+      color: #fff;
+   }
+
+   &__image {
+      img {
+         max-width: 700px;
+         width: 100%;
+      }
+   }
+
+   .swiper {
+      width: 100%;
+      height: 100%;
+   }
+
+   .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+   }
+
+   @media (max-width: $md4) {
+      &__title {
+         font-size: 14px;
+         line-height: 20px;
+      }
+   }
+
+   @media (max-height: 600px) {
+      margin: 95px 0 0 0;
+   }
+}
