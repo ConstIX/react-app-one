@@ -1,3 +1,8 @@
-@import "../variables";
+.contacts {
+   padding: 50px 0 80px 0;
+   background-color: #404040;
 
-.contacts {}
+   &_l {
+      margin: 95px 0 0 0;
+   }
+}

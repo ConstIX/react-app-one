@@ -1,8 +1,12 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 
 const Portfolio: React.FC = () => {
+
+   const { pathname } = useLocation()
+
    return (
-      <section className="portfolio">
+      <section className={`portfolio ${pathname === '/portfolio' ? 'portfolio_l' : ''}`}>
          <div className="container">
 
             <div className="portfolio__header-block header-block">
