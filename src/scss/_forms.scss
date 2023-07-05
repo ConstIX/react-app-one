@@ -20,13 +20,20 @@
       color: #fff;
    }
 
+   &_c {
+      background-color: #180b0b;
+      color: #fff;
+   }
+
    &:hover {
       transform: translateY(0);
       box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
    }
 
    @media (max-width: $md4) {
-      &_o {
+
+      &_o,
+      &_c {
          font-size: 15px;
          padding: 10px 30px;
       }
