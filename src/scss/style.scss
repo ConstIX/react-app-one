@@ -15,12 +15,18 @@
    text-align: center;
 
    &::after {
-      display: block;
       content: '';
-      width: 100px;
-      height: 5px;
-      background-color: #ed1c29;
+      display: block;
+      width: 120px;
+      height: 2px;
+      background-color: #fff;
       margin: 0 auto;
+   }
+
+   &_b {
+      &:after {
+         background-color: #555;
+      }
    }
 
    &__title {
@@ -43,7 +49,7 @@
       font-weight: 300;
       line-height: 20px;
       color: #fff;
-      margin: 0 0 50px 0;
+      margin: 0 0 35px 0;
 
       &_b {
          color: #555;

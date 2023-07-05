@@ -15,7 +15,7 @@ function App() {
    return (
       <div className="wrapper">
 
-         {/* <Header /> */}
+         <Header />
 
          <main className="content">
 
