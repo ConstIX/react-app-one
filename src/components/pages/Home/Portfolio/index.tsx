@@ -1,6 +1,5 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import Offer from '../Offer'
 
 const Portfolio: React.FC = () => {
 
@@ -21,7 +20,6 @@ const Portfolio: React.FC = () => {
             </div>
          </section>
 
-         {pathname === '/portfolio' && <Offer />}
       </>
    )
 }

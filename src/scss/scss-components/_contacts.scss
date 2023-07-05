@@ -9,10 +9,6 @@
    &__body {
       max-width: 1050px;
       margin: 0 auto;
-
-      &_i {
-         margin: 0 auto 65px auto;
-      }
    }
 
    &__info {
@@ -20,7 +16,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       row-gap: 30px;
-      margin: 65px 0;
+      margin: 65px 0 0 0;
    }
 
    &__item {
@@ -49,12 +45,6 @@
    &__text {
       font-size: 22px;
       color: rgba(255, 255, 255, 0.8);
-   }
-
-   &__map {
-      iframe {
-         width: 100%;
-      }
    }
 
    @media (max-width: $md2) {

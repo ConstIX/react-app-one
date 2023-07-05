@@ -11,6 +11,7 @@ import About from "./pages/About"
 import '../scss/style.scss'
 
 function App() {
+
    return (
       <div className="wrapper">
 
