@@ -17,20 +17,10 @@ const Fullpage: React.FC = () => {
    return (
       <section className="fullpage">
 
-         <Swiper
-            modules={[EffectFade, Autoplay]}
-            effect={'fade'}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
-            className="fullpage__swiper"
-         >
-            {fullscreen.map((i, idx) => <SwiperSlide key={idx}><img src={i} alt="..." /></SwiperSlide>)}
-         </Swiper>
-
          <div className="fullpage__body">
             <div className="fullpage__item">
-               <div className="fullpage__image"><img src={logo} alt="" /></div>
+               <div className="fullpage__image"><img src={logo} alt="..." /></div>
                <div className="fullpage__title">Реализуем проекты любой сложности – от стандартных бюджетных конструкций до концептуальных пространственных решений.</div>
-               <div className="btn btn_h fullpage__btn">заказать звонок</div>
             </div>
          </div>
 

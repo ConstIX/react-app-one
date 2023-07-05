@@ -15,9 +15,9 @@ function App() {
    return (
       <div className="wrapper">
 
-         <Header />
+         {/* <Header /> */}
 
-         <main className="page">
+         <main className="content">
 
             <Routes>
                <Route path='/' element={<Home />} />

@@ -55,13 +55,6 @@ const Header: React.FC = () => {
                   <Link to="/" className="header__logo"><img src={logo} alt="..." /></Link>
                </div>
 
-               <div className="header__column">
-                  <div className="header__item header__item_l">
-                     <a href='tel:+7 (926) 917-88-53' className="header__phone">+7 (926) 917-88-53</a>
-                     <div className="btn btn_h header__btn">заказать звонок</div>
-                  </div>
-               </div>
-
             </div>
          </div>
       </header>
