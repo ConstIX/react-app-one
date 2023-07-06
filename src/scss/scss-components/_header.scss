@@ -3,99 +3,58 @@
    width: 100%;
    z-index: 50;
 
+   &_l {
+      background-color: #000;
+   }
+
    &__body {
+      height: 95px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      height: 95px;
-   }
-
-   &__column:nth-child(2) {
-      flex: 0 1 105px;
-      overflow: hidden;
-   }
-
-   &__item {
-      display: flex;
       align-items: center;
       gap: 30px;
    }
 
-   &__logo,
-   &__social {
+   &__column {
+      &:nth-child(2) {
+         flex: 1 0 auto;
+      }
+   }
+
+   &__logo {
       position: relative;
       z-index: 4;
-   }
-
-   &__social {
-      display: flex;
-      gap: 5px;
-   }
-
-   &__link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #ed1c29;
-      transition: all 0.5s ease 0s;
 
       svg {
-         fill: #fff;
-         transition: all 0.5s ease 0s;
-      }
-
-      &:hover {
-         background-color: #fff;
-
-         svg {
-            fill: #ed1c29
-         }
+         max-width: 105px;
+         height: 60px;
       }
    }
 
    &__phone {
+      position: relative;
       font-size: 18px;
       font-weight: 300;
-      color: #000;
+      color: #fff;
+      z-index: 4;
    }
 
    @media (max-width: $md2) {
-      &__body {
-         flex-direction: row-reverse;
-      }
+      &__column {
+         &:first-child {
+            flex: 1 0 auto;
+         }
 
-      &__column:last-child {
-         display: none;
-      }
-
-      &__item {
-         flex-direction: row-reverse;
-         gap: 20px;
-      }
-
-      &__phone-block {
-         flex-direction: column;
-         gap: 10px;
+         &:nth-child(2) {
+            flex: 0 0 auto;
+            order: 3;
+         }
       }
    }
 
    @media (max-width: $md4) {
-      &__column:nth-child(2) {
-         flex: 0 1 105px;
-         overflow: hidden;
-      }
-
-      &__link {
-         width: 30px;
-         height: 30px;
-
-         svg {
-            width: 16px;
-            height: 16px;
-         }
+      &__phone_l {
+         display: none;
       }
    }
 }
@@ -103,19 +62,18 @@
 .menu {
    &__list {
       display: flex;
-      flex-direction: column;
       align-items: center;
 
       li {
-         margin: 0 0 60px 0;
+         margin: 0 0 0 30px;
       }
    }
 
    &__link {
-      font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #000;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: #fff;
       transition: all 0.3s ease 0s;
 
       span {
@@ -126,9 +84,9 @@
             position: absolute;
             left: 50%;
             width: 0;
-            height: 1.5px;
-            background-color: #000;
-            bottom: -5px;
+            height: 1px;
+            background-color: #fff;
+            bottom: -4px;
             transition: all 0.3s ease 0s;
          }
       }
@@ -141,48 +99,40 @@
       }
    }
 
-   &__body {
-      position: fixed;
-      width: 350px;
-      height: auto;
-      top: -110%;
-      left: inherit;
-      overflow: auto;
-      padding: 150px 0 0 0;
-      transition: all 0.3s ease 0s;
-      visibility: hidden;
-
-      &.active {
-         background-color: #fff;
-         top: 0;
-         visibility: visible;
-      }
-   }
-
-   &__phone-block {
+   &__phone {
       display: none;
    }
 
    @media (max-width: $md2) {
       &__body {
+         position: fixed;
          width: 100%;
          height: 100%;
+         top: -110%;
          left: 0;
+         overflow: auto;
          padding: 200px 0 0 0;
+         transition: all 0.3s ease 0s;
+
+         &.active {
+            background-color: #6c6c6c;
+            top: 0;
+         }
       }
 
       &__list {
+         flex-direction: column;
+
          li {
             margin: 0 0 40px 0;
          }
       }
+   }
 
-      &__phone-block {
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         gap: 15px;
+   @media (max-width: $md4) {
+      &__phone {
+         display: block;
+         text-align: center;
       }
    }
 }
@@ -195,65 +145,66 @@ body.lock header.header:before {
    left: 0;
    height: 95px;
    width: 100%;
-   background-color: #fff;
+   background-color: #6c6c6c;
 }
 
 // Бургер меню
-.icon-menu {
-   display: block;
-   position: relative;
-   width: 30px;
-   height: 20px;
-   cursor: pointer;
-   z-index: 5;
+@media (max-width: $md2) {
+   .icon-menu {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      z-index: 5;
 
-   span {
-      transition: all 0.3s ease 0s;
-      top: 8px;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      height: 4px;
-      border-radius: 1.5px;
-      background-color: #242424;
-
-      &:first-child {
-         top: 0;
-      }
-
-      &:last-child {
-         top: auto;
-         bottom: 0;
-      }
-   }
-
-   &:hover {
       span {
-         transform: scale(0.8);
+         transition: all 0.3s ease 0s;
+         top: 8px;
+         left: 0;
+         position: absolute;
+         width: 100%;
+         height: 4px;
+         border-radius: 1.5px;
+         background-color: #fff;
 
          &:first-child {
-            transform: rotate(-5deg);
+            top: 0;
          }
 
          &:last-child {
-            transform: rotate(5deg);
+            top: auto;
+            bottom: 0;
          }
       }
-   }
 
-   &.active {
-      span {
-         background-color: #242424;
-         transform: scale(0);
+      &:hover {
+         span {
+            transform: scale(0.8);
 
-         &:first-child {
-            transform: rotate(-45deg);
-            top: 8px;
+            &:first-child {
+               transform: rotate(-5deg);
+            }
+
+            &:last-child {
+               transform: rotate(5deg);
+            }
          }
+      }
 
-         &:last-child {
-            transform: rotate(45deg);
-            bottom: 8px;
+      &.active {
+         span {
+            transform: scale(0);
+
+            &:first-child {
+               transform: rotate(-45deg);
+               top: 8px;
+            }
+
+            &:last-child {
+               transform: rotate(45deg);
+               bottom: 8px;
+            }
          }
       }
    }

@@ -1,23 +1,11 @@
 import React from "react"
+import { brands } from "../../../data";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Grid, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
-
-import image1 from '../../../assets/img/brand/01.png'
-import image2 from '../../../assets/img/brand/02.png'
-import image3 from '../../../assets/img/brand/03.png'
-import image4 from '../../../assets/img/brand/04.png'
-import image5 from '../../../assets/img/brand/05.png'
-import image6 from '../../../assets/img/brand/06.png'
-import image7 from '../../../assets/img/brand/07.png'
-import image8 from '../../../assets/img/brand/08.png'
-import image9 from '../../../assets/img/brand/09.jpg'
-import image10 from '../../../assets/img/brand/010.png'
-
-const brands = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10]
 
 const Brand: React.FC = () => {
 
