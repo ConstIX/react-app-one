@@ -8,6 +8,14 @@
       align-items: center;
    }
 
+   &__logo {
+
+      svg {
+         max-width: 300px;
+         height: 60px;
+      }
+   }
+
    &__menu {
       display: flex;
       gap: 60px;

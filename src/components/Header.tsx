@@ -5,12 +5,17 @@ import { links } from '../data'
 
 const Header: React.FC = () => {
 
-   const [menu, setMenu] = React.useState<boolean>(false)
+   const [navbar, setNavbar] = React.useState({ menu: false, color: false })
 
-   menu && document.documentElement.clientWidth < 992.98 ? document.body.classList.add('lock') : document.body.classList.remove('lock')
+   navbar.menu && document.documentElement.clientWidth < 992.98 ? document.body.classList.add('lock') : document.body.classList.remove('lock')
+
+   window.addEventListener('scroll', function () {
+      const header = document.querySelector('.header')
+      header?.classList.toggle('sticky', window.scrollY > 0)
+   })
 
    return (
-      <header className={`header`}>
+      <header className="header">
          <div className="container">
             <div className="header__body">
 
@@ -26,15 +31,15 @@ const Header: React.FC = () => {
                </div>
 
                <div className="header__column">
-                  <div onClick={() => setMenu(!menu)} className={`menu__icon icon-menu ${menu ? 'active' : ''}`}>
+                  <div onClick={() => setNavbar({ ...navbar, menu: !navbar.menu })} className={`menu__icon icon-menu ${navbar.menu ? 'active' : ''}`}>
                      <span></span>
                      <span></span>
                      <span></span>
                   </div>
 
-                  <nav className={`menu__body ${menu ? 'active' : ''}`}>
+                  <nav className={`menu__body ${navbar.menu ? 'active' : ''}`}>
                      <ul className="menu__list">
-                        {links.map(obj => <li onClick={() => setMenu(!menu)} key={obj.text}><Link to={obj.link} className="menu__link"><span>{obj.text}</span></Link></li>)}
+                        {links.map(obj => <li onClick={() => setNavbar({ ...navbar, menu: !navbar.menu })} key={obj.text}><Link to={obj.link} className="menu__link"><span>{obj.text}</span></Link></li>)}
                      </ul>
                      <a href='tel:+7(-985)-889-17-88' className="header__phone menu__phone">+7(-985)-889-17-88</a>
                   </nav>

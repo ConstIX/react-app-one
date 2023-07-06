@@ -2,7 +2,8 @@
 export const links = [
    { link: '/', text: 'главная' },
    { link: '/portfolio', text: 'портфолио' },
-   { link: '/about', text: 'о компании MV creative' },
+   { link: '/services', text: 'услуги' },
+   { link: '/about', text: 'о компании' },
    { link: '/contacts', text: 'контакты' }
 ]
 

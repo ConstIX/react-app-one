@@ -7,7 +7,7 @@ const CategoryBlock: React.FC<CategoryBlockProps> = ({ image, text }) => {
       <div className="categories__column">
          <div className="categories__item item">
             <div className="item__image"><img src={image} alt="..." /></div>
-            <div className="item__text">{text}</div>
+            <h3>{text}</h3>
          </div>
       </div>
    )
