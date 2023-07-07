@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Fullpage: React.FC = () => {
+const Fullpage = () => {
    return (
       <section className="fullpage">
 

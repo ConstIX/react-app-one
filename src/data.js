@@ -39,6 +39,71 @@ export const features = [
    { image: image_f3, title: 'ДЕМОКРАТИЧНЫЕ ЦЕНЫ', text: 'Благодаря собственному производству устанавливаем адекватные цены на изготовление и установку конструкций, мебели и стендов. Составляем прозрачную смету для клиентов. Предоставляем скидки при масштабных заказах и регулярном сотрудничестве.' }
 ]
 
+// PORTFOLIO ============================================
+import image_p1 from './assets/img/portfolio/01.jpg'
+import image_p2 from './assets/img/portfolio/02.jpg'
+import image_p3 from './assets/img/portfolio/03.jpg'
+import image_p4 from './assets/img/portfolio/04.png'
+import image_p5 from './assets/img/portfolio/05.jpg'
+import image_p6 from './assets/img/portfolio/06.jpg'
+import image_p7 from './assets/img/portfolio/07.jpg'
+import image_p8 from './assets/img/portfolio/08.jpg'
+import image_p9 from './assets/img/portfolio/09.jpg'
+import image_p10 from './assets/img/portfolio/010.jpg'
+import image_p11 from './assets/img/portfolio/011.jpg'
+import image_p12 from './assets/img/portfolio/012.jpg'
+import image_p13 from './assets/img/portfolio/013.jpg'
+import image_p14 from './assets/img/portfolio/014.jpg'
+import image_p15 from './assets/img/portfolio/015.jpg'
+import image_p16 from './assets/img/portfolio/016.jpg'
+import image_p17 from './assets/img/portfolio/017.jpg'
+import image_p18 from './assets/img/portfolio/018.jpg'
+import image_p19 from './assets/img/portfolio/019.jpg'
+import image_p20 from './assets/img/portfolio/020.jpg'
+import image_p21 from './assets/img/portfolio/021.jpg'
+import image_p22 from './assets/img/portfolio/022.jpg'
+import image_p23 from './assets/img/portfolio/023.jpg'
+import image_p24 from './assets/img/portfolio/024.jpg'
+import image_p25 from './assets/img/portfolio/025.jpg'
+import image_p26 from './assets/img/portfolio/026.jpg'
+import image_p27 from './assets/img/portfolio/027.jpg'
+import image_p28 from './assets/img/portfolio/028.jpg'
+import image_p29 from './assets/img/portfolio/029.jpg'
+import image_p30 from './assets/img/portfolio/030.jpg'
+
+export const portfolio = [
+   { image: image_p1 },
+   { image: image_p2 },
+   { image: image_p3 },
+   { image: image_p4 },
+   { image: image_p5 },
+   { image: image_p6 },
+   { image: image_p7 },
+   { image: image_p8 },
+   { image: image_p9 },
+   { image: image_p10 },
+   { image: image_p11 },
+   { image: image_p12 },
+   { image: image_p13 },
+   { image: image_p14 },
+   { image: image_p15 },
+   { image: image_p16 },
+   { image: image_p17 },
+   { image: image_p18 },
+   { image: image_p19 },
+   { image: image_p20 },
+   { image: image_p21 },
+   { image: image_p22 },
+   { image: image_p23 },
+   { image: image_p24 },
+   { image: image_p25 },
+   { image: image_p26 },
+   { image: image_p27 },
+   { image: image_p28 },
+   { image: image_p29 },
+   { image: image_p30 }
+]
+
 // BRAND ============================================
 import image_b1 from './assets/img/brand/01.png'
 import image_b2 from './assets/img/brand/02.png'
