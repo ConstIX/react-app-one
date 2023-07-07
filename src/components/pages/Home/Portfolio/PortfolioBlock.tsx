@@ -1,8 +1,14 @@
 import React from 'react'
 
-const PortfolioBlock: React.FC = () => {
+type PortfolioBlockProps = { image: string }
+
+const PortfolioBlock: React.FC<PortfolioBlockProps> = ({ image }) => {
    return (
-      <div>PortfolioBloc:React.FCk</div>
+      <div className='portfolio__column'>
+         <div className="portfolio__item item">
+            <div className="item__image"><img src={image} alt="..." /></div>
+         </div>
+      </div>
    )
 }
 

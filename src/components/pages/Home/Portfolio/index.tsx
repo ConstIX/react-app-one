@@ -1,5 +1,9 @@
 import React from 'react'
+import PortfolioBlock from './PortfolioBlock'
+
 import { useLocation } from 'react-router-dom'
+import { portfolio } from '../../../../data'
+
 
 const Portfolio: React.FC = () => {
 
@@ -15,7 +19,9 @@ const Portfolio: React.FC = () => {
                   <div className="header-block__text">Предлагаем ознакомиться с уже выполненными проектами. Каждый из них – это результат работы целой команды специалистов, от проектировщиков до мастеров цехов.</div>
                </div>
 
-               <div className="portfolio__body"></div>
+               <div className="portfolio__body">
+                  {portfolio.map((obj, i) => <PortfolioBlock {...obj} key={i} />)}
+               </div>
 
             </div>
          </section>
