@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WorkType: React.FC = () => {
+const Services: React.FC = () => {
    return (
       <section className="type">
          <div className="container">
@@ -16,4 +16,4 @@ const WorkType: React.FC = () => {
    )
 }
 
-export default WorkType
+export default Services

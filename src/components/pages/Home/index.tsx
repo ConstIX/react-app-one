@@ -5,7 +5,7 @@ import DecorationCategory from "./DecorationCategory"
 import Features from "./Features"
 import Fullpage from './Fullpage'
 import Portfolio from "./Portfolio"
-import WorkType from './WorkType'
+import Services from './Services'
 
 const Home: React.FC = () => {
    return (
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
          <DecorationCategory />
          <Features />
          <Portfolio />
-         <WorkType />
+         <Services />
          <Brand />
       </>
    )

@@ -6,6 +6,7 @@ import Footer from "./Footer"
 import Home from "./pages/Home"
 import Portfolio from "./pages/Home/Portfolio"
 import About from "./pages/About"
+import Services from "./pages/Home/Services"
 
 import '../scss/style.scss'
 
@@ -21,6 +22,7 @@ function App() {
             <Routes>
                <Route path='/' element={<Home />} />
                <Route path='/portfolio' element={<Portfolio />} />
+               <Route path='/services' element={<Services />} />
                <Route path='/about' element={<About />} />
             </Routes>
 
