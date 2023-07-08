@@ -3,8 +3,7 @@ export const links = [
    { link: '/', text: 'главная' },
    { link: '/portfolio', text: 'портфолио' },
    { link: '/services', text: 'услуги' },
-   { link: '/about', text: 'о компании' },
-   { link: '/contacts', text: 'контакты' }
+   { link: '/about', text: 'о компании' }
 ]
 
 // CATEGORIES ============================================

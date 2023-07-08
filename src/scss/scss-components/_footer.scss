@@ -8,45 +8,33 @@
       align-items: center;
    }
 
+   &__item_c {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+   }
+
+   &__contacts {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span {
+         font-size: 18px;
+         font-weight: 300;
+         color: #fff;
+      }
+
+      svg {
+         fill: #fff;
+      }
+   }
+
    &__logo {
 
       svg {
-         max-width: 300px;
+         max-width: 105px;
          height: 60px;
-      }
-   }
-
-   &__menu {
-      display: flex;
-      gap: 60px;
-   }
-
-   &__nav {
-      font-size: 18px;
-      color: #fff;
-      text-transform: uppercase;
-
-      span {
-         position: relative;
-         display: block;
-
-         &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            width: 25px;
-            height: 1.5px;
-            background-color: #fff;
-            bottom: -5px;
-            transition: all 0.3s ease 0s;
-         }
-      }
-
-      &:hover {
-
-         span:after {
-            width: 100%;
-         }
       }
    }
 
@@ -79,26 +67,18 @@
       }
    }
 
-   @media (max-width: $md1) {
-      &__menu {
-         gap: 30px;
-      }
-   }
-
    @media (max-width: $md2) {
       &__body {
          flex-direction: column;
-         gap: 40px;
+         gap: 20px;
       }
    }
 
-   @media (max-width: $md3) {
-      &__column:nth-child(2) {
-         display: none;
-      }
+   @media (max-width: 590px) {
 
-      &__body {
-         gap: 20px;
+      &__item_c {
+         flex-direction: column;
+         gap: 10px;
       }
    }
 }

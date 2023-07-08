@@ -41,12 +41,12 @@ const Header: React.FC = () => {
                      <ul className="menu__list">
                         {links.map(obj => <li onClick={() => setNavbar({ ...navbar, menu: !navbar.menu })} key={obj.text}><Link to={obj.link} className="menu__link"><span>{obj.text}</span></Link></li>)}
                      </ul>
-                     <a href='tel:+7(-985)-889-17-88' className="header__phone menu__phone">+7(-985)-889-17-88</a>
+                     <a href='tel:+7 (985)-889-17-88' className="header__phone menu__phone">+7 (985)-889-17-88</a>
                   </nav>
                </div>
 
                <div className="header__column">
-                  <a href='tel:+7(-985)-889-17-88' className="header__phone header__phone_l">+7(-985)-889-17-88</a>
+                  <a href='tel:+7 (985)-889-17-88' className="header__phone header__phone_l">+7 (985)-889-17-88</a>
                </div>
 
             </div>

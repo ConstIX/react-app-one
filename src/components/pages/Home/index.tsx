@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Brand from './Brand'
-import Contacts from './Contacts'
 import DecorationCategory from "./DecorationCategory"
 import Features from "./Features"
 import Fullpage from './Fullpage'
@@ -17,7 +16,6 @@ const Home: React.FC = () => {
          <Portfolio />
          <WorkType />
          <Brand />
-         <Contacts />
       </>
    )
 }
