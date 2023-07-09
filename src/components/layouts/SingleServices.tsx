@@ -6,6 +6,7 @@ const SingleServices = () => {
 
    let { id } = useParams()
    const [single, setSingle] = React.useState(service[Number(id) - 1])
+   console.log(setSingle)
 
    return (
       <section className="single-type">

@@ -9,14 +9,14 @@ import image_cat7 from './assets/img/categories/07.jpg'
 import image_cat8 from './assets/img/categories/08.jpg'
 
 export const category = [
-   { image: image_cat1, text: 'Свадьбы' },
-   { image: image_cat2, text: 'Дни рождения' },
-   { image: image_cat3, text: 'Презентации' },
-   { image: image_cat4, text: 'выставки' },
-   { image: image_cat5, text: 'спартакиады' },
-   { image: image_cat6, text: 'концерты' },
-   { image: image_cat7, text: 'фестивали' },
-   { image: image_cat8, text: 'фешн показы' }
+   { image: './react-app-one/' + image_cat1, text: 'Свадьбы' },
+   { image: './react-app-one/' + image_cat2, text: 'Дни рождения' },
+   { image: './react-app-one/' + image_cat3, text: 'Презентации' },
+   { image: './react-app-one/' + image_cat4, text: 'выставки' },
+   { image: './react-app-one/' + image_cat5, text: 'спартакиады' },
+   { image: './react-app-one/' + image_cat6, text: 'концерты' },
+   { image: './react-app-one/' + image_cat7, text: 'фестивали' },
+   { image: './react-app-one/' + image_cat8, text: 'фешн показы' }
 ]
 
 // FEATURES ============================================
