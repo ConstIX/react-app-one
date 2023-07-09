@@ -1,9 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Footer: React.FC = () => {
+
+   const { pathname } = useLocation()
+   const shadow = pathname !== '/'
+
    return (
-      <footer className='footer'>
+      <footer className={`footer  ${shadow ? 'footer_s' : ''}`}>
          <div className="container">
 
             <div className="footer__body">
@@ -12,7 +16,7 @@ const Footer: React.FC = () => {
                   <div className="footer__item">
                      <Link to="/" className="footer__logo">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 15">
-                           <g fill='#FFFFFF'>
+                           <g fill='#01ba9f'>
                               <polygon points="22.18,0.19 15.46,9.85 8.65,0.1 0.11,12.68 2.05,12.65 8.65,2.95 15.41,12.65 22.2,2.91 28.83,12.63 30.79,12.63 " />
                               <polygon points="32.43,12.63 40.93,0.12 39.04,0.12 32.44,9.82 25.84,0.12 23.95,0.12 " />
                            </g>

@@ -25,7 +25,7 @@
       display: block;
       width: 120px;
       height: 2px;
-      background-color: #fff;
+      background-color: $tiffany;
       margin: 0 auto;
    }
 
@@ -38,7 +38,7 @@
    &__title {
       font-size: 48px;
       font-weight: 300;
-      color: #fff;
+      color: $text;
       margin: 0 0 25px 0;
 
       &_dc {
@@ -54,7 +54,7 @@
       font-size: 14px;
       font-weight: 300;
       line-height: 20px;
-      color: #fff;
+      color: $text;
       margin: 0 0 35px 0;
 
       &_b {

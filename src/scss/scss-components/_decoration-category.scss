@@ -1,17 +1,17 @@
 .categories {
    position: relative;
    padding: 100px 0;
-   background-color: #262626;
+   background-color: $bg;
 
    &::before {
       content: '';
       position: absolute;
       width: 100%;
-      height: 100px;
+      height: 300px;
       top: 0;
       left: 0;
       transform: translate(0px, -100%);
-      background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, #262626 100%);
+      background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, $bg 100%);
    }
 
    &__body {
@@ -45,13 +45,15 @@
          font-size: 20px;
          font-weight: 500;
          text-transform: uppercase;
-         color: #fff;
+         color: $text;
 
          transform: translate3d(0, 0, 0);
          transition: transform .35s;
       }
 
       img {
+         position: relative;
+         border: 3px solid $tiffany;
          opacity: .5;
          transition: opacity .35s, transform .35s;
          transform: scale(1.1);
@@ -60,8 +62,7 @@
       &:hover {
 
          img {
-            opacity: .9;
-            border: 3px solid $tiffany;
+            opacity: .7;
             transform: translate3d(0, 0, 0);
          }
 
@@ -78,7 +79,7 @@
       font-size: 30px;
       line-height: 40px;
       text-transform: uppercase;
-      color: #fff;
+      color: $text;
    }
 
    @media (max-width: $md1) {

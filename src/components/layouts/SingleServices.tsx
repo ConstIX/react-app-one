@@ -24,7 +24,7 @@ const SingleServices = () => {
 
                <div className="single-type__button">
                   <Link className='btn btn_s' to='/services'>
-                     <svg width="23" height="23" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z" /></svg>
+                     <svg width="23" height="23" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" fill="rgb(214, 214, 214)"><path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z" /></svg>
                      <span>вернуться назад</span>
                   </Link>
                </div>

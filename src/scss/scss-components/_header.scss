@@ -7,7 +7,8 @@
 
    &.sticky {
       padding: 10px 0;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: #272727f0;
+      box-shadow: 0px 14px 16px 2px rgba(0, 0, 0, 0.1);
    }
 
    &__body {
@@ -37,7 +38,7 @@
       position: relative;
       font-size: 18px;
       font-weight: 300;
-      color: #fff;
+      color: $text;
       z-index: 4;
    }
 
@@ -75,7 +76,7 @@
       font-size: 16px;
       font-weight: 400;
       text-transform: capitalize;
-      color: #fff;
+      color: $text;
       transition: all 0.3s ease 0s;
 
       span {
@@ -87,7 +88,7 @@
             left: 50%;
             width: 0;
             height: 1px;
-            background-color: #fff;
+            background-color: $tiffany;
             bottom: -4px;
             transition: all 0.3s ease 0s;
          }
@@ -117,7 +118,7 @@
          transition: all 0.3s ease 0s;
 
          &.active {
-            background-color: #6c6c6c;
+            background-color: $bg;
             top: 0;
          }
       }
@@ -147,7 +148,8 @@ body.lock header.header:before {
    left: 0;
    height: 95px;
    width: 100%;
-   background-color: #6c6c6c;
+   background-color: $bg;
+   box-shadow: 0px 14px 16px 2px rgba(0, 0, 0, 0.1);
 }
 
 // Бургер меню
@@ -168,7 +170,7 @@ body.lock header.header:before {
          width: 100%;
          height: 4px;
          border-radius: 1.5px;
-         background-color: #fff;
+         background-color: $text;
 
          &:first-child {
             top: 0;
@@ -196,6 +198,7 @@ body.lock header.header:before {
 
       &.active {
          span {
+            background-color: $tiffany;
             transform: scale(0);
 
             &:first-child {

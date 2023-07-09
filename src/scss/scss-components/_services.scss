@@ -1,6 +1,7 @@
 .type {
-   padding: 50px 0 80px 0;
-   background-color: #404040;
+   padding: 100px 0;
+   background-color: $bg;
+   box-shadow: 0px -14px 16px 2px rgba(0, 0, 0, 0.1);
 
    &_l {
       flex: 1 0 auto;
@@ -38,7 +39,7 @@
          font-size: 16px;
          font-weight: 400;
          padding: 10px;
-         color: #fff;
+         color: $text;
 
          transform: translate3d(0, 50px, 0);
          transition: transform .35s;
@@ -54,7 +55,7 @@
       &:hover {
 
          img {
-            opacity: .9;
+            opacity: .7;
             transform: translate3d(0, 0, 0);
          }
 
@@ -80,6 +81,12 @@
    }
 
    @media (max-width: $md3) {
+      padding: 60px 0;
+
+      &_l {
+         padding: 200px 0 80px 0;
+      }
+
       &__body {
          max-width: 480px;
          margin: 60px auto 0 auto;
@@ -94,7 +101,7 @@
 .single-type {
    flex: 1 0 auto;
    padding: 200px 0 80px 0;
-   background-color: #6c6c6c;
+   background-color: $bg;
 
    &__body {
       max-width: 800px;
@@ -104,7 +111,7 @@
    &__text {
       font-size: 16px;
       line-height: 24px;
-      color: rgba(255, 255, 255, 0.8);
+      color: $text;
 
       &:not(:last-child) {
          margin: 0 0 30px 0;
