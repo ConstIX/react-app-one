@@ -23,7 +23,7 @@ const Services: React.FC = () => {
             <div className={` ${loadMore < service.length ? 'type__button' : 'type__button_n'}`}>
                {
                   pathname === '/services' ? <div onClick={() => setLoadMore(prev => prev + 3)} className='btn btn_t'><span>загрузить еще</span></div> :
-                     <Link className='btn' to='/services'><span>смотреть все услуги</span></Link>
+                     <Link className='btn btn_t' to='/services'><span>смотреть все услуги</span></Link>
                }
             </div>
 

@@ -24,15 +24,26 @@
       border-radius: 160px;
    }
 
-   span {
+   span,
+   svg {
       position: relative;
       z-index: 1;
       transition: all .3s ease 0s;
    }
 
+   &_s {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+   }
+
    &:hover {
       &.btn {
          color: #198C36;
+
+         svg {
+            fill: #198C36;
+         }
       }
 
       &:after {

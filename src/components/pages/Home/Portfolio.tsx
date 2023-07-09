@@ -68,7 +68,7 @@ const Portfolio: React.FC = () => {
                <div className={` ${load < portfolio.length ? 'portfolio__button' : 'portfolio__button_n'}`}>
                   {
                      pathname === '/portfolio' ? <div onClick={() => setLoad(prev => prev + 3)} className='btn btn_p'><span>загрузить еще</span></div> :
-                        <Link className='btn' to='/portfolio'><span>смотреть все работы</span></Link>
+                        <Link className='btn btn_p' to='/portfolio'><span>смотреть все работы</span></Link>
                   }
                </div>
 
