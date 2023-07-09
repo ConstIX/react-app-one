@@ -94,3 +94,17 @@
       right: 0;
    }
 }
+
+@-o-keyframes arrow {
+   0% {
+      right: 0;
+   }
+
+   50% {
+      right: 5px;
+   }
+
+   100% {
+      right: 0;
+   }
+}
