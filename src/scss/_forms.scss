@@ -42,6 +42,7 @@
          color: #198C36;
 
          svg {
+            animation: arrow 1s infinite linear;
             fill: #198C36;
          }
       }
@@ -49,5 +50,47 @@
       &:after {
          transform: scale(1);
       }
+   }
+}
+
+@keyframes arrow {
+   0% {
+      right: 0;
+   }
+
+   50% {
+      right: 5px;
+   }
+
+   100% {
+      right: 0;
+   }
+}
+
+@-webkit-keyframes arrow {
+   0% {
+      right: 0;
+   }
+
+   50% {
+      right: 5px;
+   }
+
+   100% {
+      right: 0;
+   }
+}
+
+@-moz-keyframes arrow {
+   0% {
+      right: 0;
+   }
+
+   50% {
+      right: 5px;
+   }
+
+   100% {
+      right: 0;
    }
 }
