@@ -1,7 +1,12 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
-import { links } from '../data'
+
+const links = [
+   { link: '/', text: 'главная' },
+   { link: '/portfolio', text: 'портфолио' },
+   { link: '/services', text: 'услуги' },
+   { link: '/about', text: 'о компании' }
+]
 
 const Header: React.FC = () => {
 
